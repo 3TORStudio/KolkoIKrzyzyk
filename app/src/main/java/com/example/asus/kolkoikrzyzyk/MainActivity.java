@@ -21,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button)findViewById(vId);
         if(counter % 2 == 1){
             button.setText("x");
+            button.setEnabled(false);
         } else {
             button.setText("o");
+            button.setEnabled(false);
         }
         counter++;
     }
