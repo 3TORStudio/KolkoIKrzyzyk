@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    public int counter = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button)findViewById(R.id.);*/
         int vId = view.getId();
         Button button = (Button)findViewById(vId);
-        button.setText("x");
-
+        if(counter % 2 == 1){
+            button.setText("x");
+        } else {
+            button.setText("o");
+        }
+        counter++;
     }
 }

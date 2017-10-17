@@ -28,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
 
         <Button
             android:id="@+id/btn13"
@@ -36,7 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
     </LinearLayout>
 
     <LinearLayout
@@ -50,7 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
 
         <Button
             android:id="@+id/btn22"
@@ -58,7 +61,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
 
         <Button
             android:id="@+id/btn23"
@@ -66,7 +70,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
     </LinearLayout>
 
     <LinearLayout
@@ -80,7 +85,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
 
         <Button
             android:id="@+id/btn32"
@@ -88,7 +94,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
 
         <Button
             android:id="@+id/btn33"
@@ -96,6 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" " />
+            android:text=" "
+            android:onClick="onClickMark"/>
     </LinearLayout>
 </LinearLayout>
