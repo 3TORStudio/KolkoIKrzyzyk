@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
         <Button
@@ -19,8 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
 
         <Button
             android:id="@+id/btn12"
@@ -28,8 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
 
         <Button
             android:id="@+id/btn13"
@@ -37,13 +37,13 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
         <Button
@@ -52,8 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
 
         <Button
             android:id="@+id/btn22"
@@ -61,8 +61,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
 
         <Button
             android:id="@+id/btn23"
@@ -70,13 +70,13 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
         <Button
@@ -85,8 +85,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
 
         <Button
             android:id="@+id/btn32"
@@ -94,8 +94,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
 
         <Button
             android:id="@+id/btn33"
@@ -103,7 +103,35 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text=" "
-            android:onClick="onClickMark"/>
+            android:onClick="onClickMark"
+            android:text=" " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNewGame"
+            style="@android:style/Widget.Holo.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/alert_light_frame"
+            android:onClick="onClickNewGame"
+            android:text="@string/btn_new_game"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/button"
+            style="@android:style/Widget.Holo.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/alert_light_frame"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="onClickNewMatch"
+            android:text="@string/btn_new_match" />
     </LinearLayout>
 </LinearLayout>

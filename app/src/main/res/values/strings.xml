@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kółko i krzyżyk 3TORStudio</string>
+    <string name="btn_new_game">New Game</string>
+    <string name="btn_new_match">New Match</string>
 </resources>
