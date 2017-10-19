@@ -108,13 +108,10 @@
     </LinearLayout>
 
     <LinearLayout
-<<<<<<< Updated upstream
+
         android:layout_width="match_parent"
         android:layout_height="77dp"
         android:orientation="horizontal">
-=======
-        android:layout_width="match_parent">
->>>>>>> Stashed changes
 
         <Button
             android:id="@+id/btnNewGame"
@@ -126,53 +123,36 @@
             android:onClick="onClickNewGame"
             android:text="@string/btn_new_game"
             android:textColor="@color/colorPrimaryDark" />
-    </LinearLayout>
 
-    <Button
-            android:id="@+id/button"
+        <Button
+            android:id="@+id/btnNewMatch"
             style="@android:style/Widget.Holo.Button.Inset"
+            android:onClick="onClickNewMatch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:drawable/alert_light_frame"
-            android:textColor="@color/colorPri
+            android:text="@string/btn_new_match"
+            android:textColor="@color/colorPrimaryDark"/>
 
-ryDark"
-            android:onClick="onClickNewMatch"
-            android:text="@string/btn_new_match" />
-    </LinearLayout><![CDATA[=======
-        android:layout_height="wrap_content"
->>>>>>> Stashed changes
-        android:orientation="horizontal">
 
-        ]]>
+    </LinearLayout>
 
-<<<<<<< Updated upstream
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="TextView" />
-=======
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textTest"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-    </LinearLayout>
 
-<<<<<<< Updated upstream
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:text="TextView" />
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+    </LinearLayout>
 </LinearLayout>
