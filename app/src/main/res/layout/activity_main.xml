@@ -144,15 +144,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
 
+        <TextView
+            android:id="@+id/scoreX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60dp"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:text="0"
+            android:layout_weight="0.5" />
 
+        <TextView
+            android:id="@+id/scoreO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:text="0"
+            android:layout_weight="0.5" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="TextView" />
     </LinearLayout>
 </LinearLayout>

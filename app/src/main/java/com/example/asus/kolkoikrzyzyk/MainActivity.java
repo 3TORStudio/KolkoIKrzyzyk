@@ -18,6 +18,8 @@ import static android.R.drawable.ic_menu_close_clear_cancel;
 public class MainActivity extends AppCompatActivity {
     private int counter = 1;
     private ArrayList<Integer> listOfClickedBtnId = new ArrayList<>();
+    private int scoreX = 0;
+    private int scoreO = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,14 +44,13 @@ public class MainActivity extends AppCompatActivity {
         }
         setCounter("add");
 
-        if(counter > 5){
+        //if(counter > 5){
             checkTheState();
-        }
+        //}
     }
 
     public void onClickNewGame(View view){
-        TextView text = (TextView) findViewById(R.id.textView);
-        text.setText("new");
+
         for(int idOfBtn : listOfClickedBtnId){
             Button button = (Button) findViewById(idOfBtn);
             button.setText(" ");
@@ -92,21 +93,31 @@ public class MainActivity extends AppCompatActivity {
         Button btn9 = (Button) findViewById(R.id.btn33);
         String s33 = btn9.getText().toString();
 
-        TextView text = (TextView) findViewById(R.id.textView);
+        TextView textX = (TextView) findViewById(R.id.scoreX);
+        TextView textO = (TextView) findViewById(R.id.scoreO);
 
-        if(s11.equals(s12) && s12.equals(s13) && s11 != " " ||
-                s21.equals(s22) && s22.equals(s23) && s21 != " " ||
-                s31.equals(s32) && s32.equals(s33) && s31 != " " ||
 
-                s11.equals(s21) && s21.equals(s31) && s11 != " " ||
-                s12.equals(s22) && s22.equals(s32) && s12 != " " ||
-                s13.equals(s23) && s23.equals(s33) && s13 != " " ||
+        if(s11.equals(s12) && s12.equals(s13) && !(s11.equals(" ")) ||
+                s21.equals(s22) && s22.equals(s23) && !(s21.equals(" ")) ||
+                s31.equals(s32) && s32.equals(s33) && !(s31.equals(" ")) ||
 
-                s11.equals(s22) && s22.equals(s33) && s11 != " " ||
-                s13.equals(s22) && s22.equals(s31) && s13 != " "
-                ){
-            text.setText("1");
-        }
+                s11.equals(s21) && s21.equals(s31) && !(s11.equals(" ")) ||
+                s12.equals(s22) && s22.equals(s32) && !(s12.equals(" ")) ||
+                s13.equals(s23) && s23.equals(s33) && !(s13.equals(" ")) ||
+
+                s11.equals(s22) && s22.equals(s33) && !(s11.equals(" ")) ||
+                s13.equals(s22) && s22.equals(s31) && !(s13.equals(" "))
+                )
+                   if( counter % 2 == 0) {
+                       scoreX++;
+                       String scoreXS = Integer.toString(scoreX);
+                       textX.setText(scoreXS);
+                   } else {
+                       scoreO++;
+                       String scoreOS = Integer.toString(scoreO);
+                       textO.setText(scoreOS);
+                   }
+
     }
 
     public int getCounter(){
