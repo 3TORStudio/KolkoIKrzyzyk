@@ -18,7 +18,15 @@ import static android.R.drawable.ic_menu_close_clear_cancel;
 public class MainActivity extends AppCompatActivity {
     private int counter = 1;
     private ArrayList<Integer> listOfClickedBtnId = new ArrayList<>();
+<<<<<<< Updated upstream
     private List<Button> buttonList = new ArrayList<>();
+=======
+<<<<<<< Updated upstream
+    private List<Button> buttonList = new ArrayList<>();
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,25 +37,46 @@ public class MainActivity extends AppCompatActivity {
     public void onClickMark(View view){
         int viewId = view.getId();
         Button button = (Button)findViewById(viewId);
+<<<<<<< Updated upstream
         buttonList.add(button);
+=======
+<<<<<<< Updated upstream
+        buttonList.add(button);
+=======
+        TextView test = (TextView)findViewById(R.id.textTest);
+
+        String viewIdS = Integer.toString(viewId);
+
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         if(counter % 2 == 1){
             listOfClickedBtnId.add(viewId);
             button.setTextSize(64);
             button.setText("x");
-            //button.setBackgroundColor(0xff0099ff);
             button.setEnabled(false);
         } else {
             listOfClickedBtnId.add(viewId);
-            //button.setBackgroundColor(0xff0099ff);
             button.setTextSize(64);
             button.setText("o");
             button.setEnabled(false);
         }
         setCounter("add");
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
         if(counter > 5){
             checkTheState();
         }
 
+<<<<<<< Updated upstream
+=======
+=======
+        test.setText(viewIdS);
+        if(getCounter() > 4){
+        }
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     }
 
     public void onClickNewGame(View view){
@@ -74,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
     public void checkTheState (){
         Button btn1 = (Button) findViewById(R.id.btn11);
         String s11 = btn1.getText().toString();
@@ -110,4 +143,20 @@ public class MainActivity extends AppCompatActivity {
             text.setText("1");
         }
     }
+<<<<<<< Updated upstream
+=======
+=======
+    public ArrayList<Integer> getListOfClickedBtnId(){
+        ArrayList<Integer> list = new ArrayList<>();
+        list = listOfClickedBtnId;
+        return list;
+    }
+
+    public int getCounter(){
+        return counter;
+    }
+
+
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
